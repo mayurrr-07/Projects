@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+a { text-decoration: none; }
+li { list-style: none; }
+body {
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #566c2b;
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+}
+header > nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#title {
+  margin: 0 auto;
+  font-size: 22px;
+  justify-self: center;
+}
+#title > a { color: #fff; }
+nav > ul > li > a {
+  padding: 10px;
+  color: #fff;
+}
+main { display: flex; }
+aside {
+  flex: 0 0 20vw;
+  padding: 10px;
+  background: beige;
+}
+aside > ul { padding: 0; }
+aside > ul > li > a {
+  color: #566c2b;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+aside > img { width: 100%; }
+article { padding: 10px; }
+#service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-box {
+  border: solid 1px #eee;
+  padding: 10px;
+  flex-basis: 32%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.service-box > h3 { margin: 5px 0 10px; }
+.service-box > p { margin: 0 0 10px; }
+.read-more > a {
+  background-color: grey;
+  border: 2px solid transparent;
+  color: #eee;
+  display: block;
+  padding: 10px 13px;
+}
+.read-more > a:hover {
+  background-color: transparent;
+  border: 2px solid grey;
+  color: grey;
+}
+.read-more {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.service-img > img { width: 100%; }
+footer {
+  background-color: #566c2b;
+  text-align: center;
+  color: #fff;
+  padding: 0 10px;
+}
+@media screen and (max-width: 1150px) {
+  aside { flex: 0 0 22vw; }
+}
+@media screen and (max-width: 1000px) {
+  aside { flex: 0 0 25vw; }
+}
+@media screen and (max-width: 820px) {
+  aside { flex: 0 0 30vw; }
+  .service-box { flex-basis: 48%; }
+}
+@media screen and (max-width: 600px) {
+  header { flex-direction: column; }
+  #title { order: -1; }
+  #menu { margin: 12px 0; }
+  article > h2 { text-align: center; }
+  main { flex-direction: column; }
+  article { order: -1; }
+  #service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-box {
+    flex-basis: 40%;
+    max-width: 420px;
+  }
+}
