@@ -17,19 +17,6 @@ HTML5: Structured, Semantic Markup.
 CSS3: Advanced styling with Flexbox, Grid, Media queries, and Animations.
 
 
-🚀 How to Use :
-To View and Use the Projects, Simply Clone this Repository and open the index.html files in your Browser.
-
-* Clone the repo:
-  git clone https://github.com/mayurrr-07/Projects.git
-
-* Navigate to the project folder:
-  cd Projects
-
-* Open index.html in a browser:
-  open index.html
-
-
 📂 Project Structure :
 
 Each Project is Housed in its Own File, Containing the Following:
